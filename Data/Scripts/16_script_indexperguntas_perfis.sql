@@ -1,0 +1,221 @@
+CREATE FULLTEXT CATALOG Catalogo AS DEFAULT;  
+
+CREATE INDEX Index_Pergunta ON DUVIDA (PERGUNTA);
+
+CREATE FULLTEXT INDEX ON DUVIDA(PERGUNTA LANGUAGE 1046)  
+KEY INDEX PK__DUVIDA__3214EC27D233121D -- Antes de rodar olhe na tabela DUVIDA o nome da PK e subistitua nessa query
+ON Catalogo
+
+INSERT INTO [dbo].[PERFIL]
+VALUES
+('F0292581-FD91-475F-B751-0604491EA3F5'
+,'Coordenador')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('CEFB4645-A48A-41BD-B2B4-D57812D4700C'
+           ,'F0292581-FD91-475F-B751-0604491EA3F5'
+           ,'C4CDD573-CE20-41BF-9B08-A76CB4A7F99E'
+           ,'All')
+GO
+
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('9D8EBA99-AC23-4D15-AE72-7D60A0E886CB'
+           ,'F0292581-FD91-475F-B751-0604491EA3F5'
+           ,'B3AE0F40-9ED1-414A-A47B-68C9250BF621'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('6BC16F2F-A82C-4E31-A87C-8C8583E07A9C'
+           ,'F0292581-FD91-475F-B751-0604491EA3F5'
+           ,'6B8BCCBB-A9ED-41F3-9B05-A6245AE51B6A'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('4183E0CD-EA81-40F3-8A90-5FA45F77F6FA'
+           ,'F0292581-FD91-475F-B751-0604491EA3F5'
+           ,'74EBB025-46DC-4D29-B9B9-42B4FE34557B'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('B226CB29-2A0D-4C6D-9D67-63CC3C5B8FE2'
+           ,'F0292581-FD91-475F-B751-0604491EA3F5'
+           ,'4F01042A-4DC0-4794-85F1-E9014341F1BA'
+           ,'All')
+GO
+
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('CF1E7F25-15F1-4441-8381-EAAAAF903AF1'
+           ,'F0292581-FD91-475F-B751-0604491EA3F5'
+           ,'A7717180-B9EC-49B2-90C4-94614B3EC957'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFIL]
+VALUES
+('A8D3371E-84E4-4A29-8CF4-CA92AF25622F'
+,'Professor')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('B554D69E-B2F8-41AB-8CAA-858D089C54DB'
+           ,'A8D3371E-84E4-4A29-8CF4-CA92AF25622F'
+           ,'C4CDD573-CE20-41BF-9B08-A76CB4A7F99E'
+           ,'All')
+GO
+
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('3A3923EA-B0EB-4456-9E95-21C6CDD19278'
+           ,'A8D3371E-84E4-4A29-8CF4-CA92AF25622F'
+           ,'B3AE0F40-9ED1-414A-A47B-68C9250BF621'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('CFB15F78-FC45-4259-B6D0-D6FA1470175C'
+           ,'A8D3371E-84E4-4A29-8CF4-CA92AF25622F'
+           ,'6B8BCCBB-A9ED-41F3-9B05-A6245AE51B6A'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('EDE2B47D-AFAB-4582-9AFD-AC4D8720FCA1'
+           ,'A8D3371E-84E4-4A29-8CF4-CA92AF25622F'
+           ,'74EBB025-46DC-4D29-B9B9-42B4FE34557B'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('B964F39D-49D1-4002-9BCC-356CCE2300FE'
+           ,'A8D3371E-84E4-4A29-8CF4-CA92AF25622F'
+           ,'4F01042A-4DC0-4794-85F1-E9014341F1BA'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFIL]
+VALUES
+('5AB0D5A4-A8EE-4B3F-946F-1085D0BBE67D'
+,'Aluno')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('A52009F8-5C5D-45C9-A5D1-977F72FA6F4B'
+           ,'5AB0D5A4-A8EE-4B3F-946F-1085D0BBE67D'
+           ,'C4CDD573-CE20-41BF-9B08-A76CB4A7F99E'
+           ,'All')
+GO
+
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('D85105D4-488D-497F-90E3-9842BBCDD2CC'
+           ,'5AB0D5A4-A8EE-4B3F-946F-1085D0BBE67D'
+           ,'B3AE0F40-9ED1-414A-A47B-68C9250BF621'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('29A0F77D-5568-490E-A181-B959A765D548'
+           ,'5AB0D5A4-A8EE-4B3F-946F-1085D0BBE67D'
+           ,'6B8BCCBB-A9ED-41F3-9B05-A6245AE51B6A'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('4DDAF436-35F5-485B-A114-86614E29184D'
+           ,'5AB0D5A4-A8EE-4B3F-946F-1085D0BBE67D'
+           ,'74EBB025-46DC-4D29-B9B9-42B4FE34557B'
+           ,'All')
+GO
+
+INSERT INTO [dbo].[PERFILMODULO]
+           ([ID]
+           ,[PERFILID]
+           ,[MODULOID]
+           ,[ACESSO])
+     VALUES
+           ('39350A39-D48D-44B3-AD2F-EC285C63EF1C'
+           ,'5AB0D5A4-A8EE-4B3F-946F-1085D0BBE67D'
+           ,'4F01042A-4DC0-4794-85F1-E9014341F1BA'
+           ,'All')
+GO
